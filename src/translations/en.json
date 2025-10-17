@@ -1,0 +1,194 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "prices": "Prices",
+    "about": "About",
+    "contact": "Contact",
+    "callNow": "Call Now"
+  },
+  "hero": {
+    "badge": "Available 24/7 - Instant Response",
+    "title": "Tow Truck Chisinau",
+    "titleHighlight": "Fast, Reliable, Non-Stop",
+    "subtitle": "Wherever you are, the",
+    "subtitleBrand": "Fulger",
+    "subtitleContinue": "team arrives immediately.",
+    "description": "Car towing, roadside assistance, and safe transport 24/7 in Chisinau and throughout Moldova.",
+    "callButton": "📞 Call Now - Urgent",
+    "whatsappButton": "💬 WhatsApp",
+    "stats": {
+      "availability": "24/7",
+      "availabilityLabel": "Available",
+      "response": "<20 min",
+      "responseLabel": "Response Time",
+      "experience": "5+ years",
+      "experienceLabel": "Experience",
+      "clients": "1000+",
+      "clientsLabel": "Happy Clients"
+    }
+  },
+  "steps": {
+    "badge": "Simple and fast process",
+    "title": "Your problem is solved in",
+    "titleHighlight": "3 simple steps",
+    "subtitle": "With",
+    "subtitleBrand": "Tow Truck Fulger Chisinau",
+    "subtitleContinue": ", the process is fast and stress-free. Send us your location and we'll take care of the rest — professional towing, complete roadside assistance, and arrival in",
+    "subtitleTime": "record time under 20 minutes",
+    "trustBadges": {
+      "instantResponse": "Instant Response",
+      "transparentPrice": "Transparent Price",
+      "noHiddenFees": "No Hidden Fees"
+    },
+    "step1": {
+      "title": "Contact us quickly",
+      "description": "Call Tow Truck Fulger directly or press the \"📞 Call Now\" button. We answer immediately - available 24/7, whenever you need us.",
+      "time": "< 1 minute"
+    },
+    "step2": {
+      "title": "Send your exact location",
+      "description": "With one click, automatically send your location on WhatsApp directly from the site - simple, secure, and precise. We know exactly where you are.",
+      "time": "< 30 seconds"
+    },
+    "step3": {
+      "title": "Get help immediately",
+      "description": "Within seconds we'll provide you with an estimated arrival time and exact price. The Fulger team immediately heads your way with the tow truck.",
+      "time": "< 20 minutes"
+    },
+    "totalTime": "Total process time:",
+    "totalTimeValue": "under 2 minutes",
+    "ctaTitle": "Ready to get fast help? ⚡",
+    "ctaDescription": "Send your location now and receive",
+    "ctaEstimate": "instant estimate",
+    "ctaArrival": "our tow truck arrives within",
+    "ctaTime": "maximum 20 minutes",
+    "callButton": "📞 Call Now",
+    "whatsappButton": "📍 Send Location on WhatsApp",
+    "seoText": "provides fast car towing services, non-stop roadside assistance, and safe transport throughout Moldova. Simple process: call → location → intervention in 20 minutes. Available 24/7 for auto emergencies.",
+    "faq": "Frequently asked questions:",
+    "faqTime": "How long until the tow truck arrives?",
+    "faqTimeAnswer": "Under 20 minutes in Chisinau.",
+    "faqLocation": "How do I send my location?",
+    "faqLocationAnswer": "One click on WhatsApp.",
+    "faqWhen": "When do you respond?",
+    "faqWhenAnswer": "Immediately, 24/7.",
+    "faqPrice": "How much does it cost?",
+    "faqPriceAnswer": "Transparent price communicated instantly."
+  },
+  "services": {
+    "title": "Our",
+    "titleHighlight": "Services",
+    "subtitle": "We offer complete solutions for any road situation",
+    "items": {
+      "towing": {
+        "title": "Car Towing",
+        "description": "Fast and safe transport of your vehicle to any location in Moldova."
+      },
+      "roadside": {
+        "title": "Roadside Assistance",
+        "description": "Professional team for any mechanical problem on the spot."
+      },
+      "available": {
+        "title": "Available 24/7",
+        "description": "At any time day or night, we're one call away from you."
+      },
+      "transport": {
+        "title": "Safe Transport",
+        "description": "Modern tow trucks with hydraulic platforms for any type of vehicle."
+      }
+    }
+  },
+  "whyUs": {
+    "badge": "Why choose us?",
+    "title": "Experience",
+    "titleHighlight": "Fulger",
+    "subtitle": "in tow truck and car towing services",
+    "description": "For over 5 years we've been providing tow truck and car towing services in Chisinau and throughout Moldova. Our professional team guarantees fast interventions, safe transport, and fair prices.",
+    "features": {
+      "fast": {
+        "title": "Fast Intervention",
+        "description": "We reach you in less than 20 minutes in Chisinau."
+      },
+      "professional": {
+        "title": "Professional Team",
+        "description": "Qualified personnel and modern equipment for any situation."
+      },
+      "price": {
+        "title": "Fair Price",
+        "description": "Transparent rates, no hidden costs or surprises."
+      },
+      "safe": {
+        "title": "Safe Transport",
+        "description": "Your vehicle is handled with maximum care throughout the entire transport."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Happy Clients",
+    "title": "What our",
+    "titleHighlight": "clients say",
+    "subtitle": "Thousands of satisfied drivers recommend our services"
+  },
+  "footer": {
+    "brand": "FULGER",
+    "description": "Fast and professional tow truck in Chisinau. We operate 24/7, at any time, anywhere in Moldova.",
+    "tagline": "⚡ Fast as lightning, at any time.",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressValue": "Chisinau, Moldova",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "copyright": "© {year} Fulger.md. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here for you 24/7",
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone",
+      "email": "Email (optional)",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent successfully! We'll contact you soon.",
+      "error": "An error occurred. Please call us directly."
+    },
+    "info": {
+      "title": "Contact Information",
+      "available": "Available 24/7",
+      "response": "Response within 2 minutes"
+    }
+  },
+  "prices": {
+    "title": "Transparent",
+    "titleHighlight": "Prices",
+    "subtitle": "Clear rates, no hidden costs",
+    "note": "* Prices may vary depending on distance and complexity of the situation",
+    "callForQuote": "Call for exact quote"
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Fulger",
+    "subtitle": "Your trusted team for tow truck and car towing",
+    "description": "We are a dedicated team of professionals with over 5 years of experience in tow truck and car towing services. Our mission is to provide fast, safe services at fair prices for all drivers in Moldova.",
+    "mission": {
+      "title": "Our Mission",
+      "text": "To be the first number you call when you need help on the road."
+    },
+    "values": {
+      "title": "Our Values",
+      "text": "Speed, professionalism, transparency, and respect for every client."
+    }
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "getQuote": "Request Quote",
+    "viewAll": "View All"
+  }
+}

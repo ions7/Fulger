@@ -113,13 +113,13 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Servicii Evacuator – Tractare, Asistență, Transport | Fulger.md</title>
+        <title>Servicii Evacuator Chișinău – Tractare Auto, Asistență Rutieră 24/7 | Fulger.md</title>
         <meta
           name="description"
-          content="Servicii complete evacuator: tractare auto, asistență rutieră, pornire baterie, deschidere mașină, alimentare combustibil. Disponibili 24/7 în Chișinău."
+          content="Servicii evacuator Chișinău: tractare auto profesionistă, asistență rutieră non-stop, transport sigur. Intervenție rapidă sub 20 minute. Sună: +373 60 000 000"
         />
-        <meta property="og:title" content="Servicii Evacuator Fulger Chișinău" />
-        <meta property="og:description" content="Tractare auto, asistență rutieră și transport sigur 24/7. Intervenție rapidă în Chișinău și Moldova." />
+        <meta property="og:title" content="Servicii Evacuator Chișinău - Tractare și Asistență Rutieră 24/7" />
+        <meta property="og:description" content="Evacuator profesionist în Chișinău: tractare auto, asistență rutieră, transport sigur. Disponibili 24/7, intervenție rapidă." />
         <link rel="canonical" href="https://fulger.md/servicii" />
       </Helmet>
 

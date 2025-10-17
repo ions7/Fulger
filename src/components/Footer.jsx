@@ -17,7 +17,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-light text-sm leading-relaxed">
-              Evacuator rapid și profesionist în Chișinău. Intervenim 24/7, la orice oră, oriunde în Moldova.
+              <strong className="text-white">Evacuator Chișinău</strong> rapid și profesionist. Tractare auto 24/7, intervenție sub 20 minute în Chișinău și Moldova.
             </p>
             <p className="text-primary font-bold text-sm">
               ⚡ Rapid ca Fulgerul, la orice oră.
@@ -81,25 +81,25 @@ const Footer = () => {
                 to="/"
                 className="block text-light hover:text-primary transition-colors"
               >
-                Acasă
+                Evacuator Chișinău
               </Link>
               <Link
                 to="/servicii"
                 className="block text-light hover:text-primary transition-colors"
               >
-                Servicii
+                Servicii evacuator Chișinău
               </Link>
               <Link
                 to="/preturi"
                 className="block text-light hover:text-primary transition-colors"
               >
-                Prețuri
+                Prețuri tractare Chișinău
               </Link>
               <Link
                 to="/despre"
                 className="block text-light hover:text-primary transition-colors"
               >
-                Despre noi
+                Despre evacuator Fulger
               </Link>
               <Link
                 to="/contact"
@@ -114,7 +114,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-primary/10 text-center text-light text-sm">
           <p>
-            &copy; {currentYear} Evacuator Fulger. Toate drepturile rezervate.
+            &copy; {currentYear} <strong className="text-white">Evacuator Fulger Chișinău</strong>. Toate drepturile rezervate.
           </p>
         </div>
       </div>

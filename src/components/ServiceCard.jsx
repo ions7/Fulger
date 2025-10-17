@@ -4,10 +4,12 @@ const ServiceCard = ({ icon: Icon, title, description, features, image }) => {
       {/* Background Image with Overlay */}
       {image && (
         <>
-          <div 
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-            style={{ backgroundImage: `url(${image})` }}
-          ></div>
+          <img 
+            src={image}
+            alt={`${title} - Evacuator Chișinău Fulger`}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            loading="lazy"
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-dark/90 via-dark/85 to-dark/95"></div>
         </>
       )}

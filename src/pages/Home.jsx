@@ -93,13 +93,47 @@ const Home = () => {
     ]
   }
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Evacuator Chișinău",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Evacuator Fulger",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chișinău",
+        "addressCountry": "MD"
+      },
+      "telephone": "+37360000000"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Chișinău"
+    },
+    "description": "Servicii profesionale de evacuator și tractare auto în Chișinău, disponibile 24/7 cu intervenție rapidă în sub 20 minute",
+    "offers": {
+      "@type": "Offer",
+      "priceRange": "300-500 MDL"
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "servicePhone": {
+        "@type": "ContactPoint",
+        "telephone": "+373-60-000-000",
+        "contactType": "Emergency Service",
+        "availableLanguage": ["Romanian", "Russian"]
+      }
+    }
+  }
+
   return (
     <>
       <Helmet>
         <title>Evacuator Chișinău – Fulger.md | Tractare Auto Non-Stop 24/7</title>
         <meta
           name="description"
-          content="Evacuator rapid și profesionist în Chișinău. Fulger – intervenim 24/7, în mai puțin de 20 minute. Tractare auto, asistență rutieră non-stop."
+          content="Evacuator Chișinău Fulger - intervenim 24/7 în sub 20 minute. Tractare auto profesionistă, asistență rutieră non-stop în Chișinău și Moldova. Sună: +373 60 000 000"
         />
         <meta property="og:title" content="Evacuator Fulger – Tractare Rapidă în Chișinău" />
         <meta property="og:description" content="Echipa Fulger intervine imediat. Tractare auto 24/7 în Chișinău și toată Moldova." />
@@ -113,18 +147,95 @@ const Home = () => {
         <script type="application/ld+json">
           {JSON.stringify(faqStructuredData)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
+        </script>
       </Helmet>
 
       <Hero />
 
       <StepsSection />
 
+      {/* SEO Content Section */}
+      <section className="py-16 bg-dark/50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-invert max-w-none">
+            <h2 className="text-3xl font-poppins font-bold text-white mb-6">
+              Evacuator Profesionist în Chișinău - Fulger.md
+            </h2>
+            <p className="text-light text-lg leading-relaxed mb-4">
+              Când ai nevoie de un <strong className="text-primary">evacuator în Chișinău</strong>, 
+              Fulger este alegerea de încredere. Cu peste 10 ani de experiență în{' '}
+              <strong className="text-primary">tractare auto Chișinău</strong> și{' '}
+              <strong className="text-primary">asistență rutieră non-stop</strong>, suntem 
+              echipa pe care o poți apela oricând.
+            </p>
+            
+            <p className="text-light text-lg leading-relaxed mb-4">
+              <strong className="text-white">Evacuator Fulger Chișinău</strong> deservește 
+              toate sectoarele capitalei: <strong className="text-primary">Botanica, Centru, 
+              Buiucani, Rîșcani, Ciocana</strong> și zone limitrofe. Indiferent unde te afli 
+              în Chișinău, <strong className="text-primary">evacuatorul nostru ajunge în mai 
+              puțin de 20 de minute</strong>.
+            </p>
+
+            <h3 className="text-2xl font-poppins font-bold text-white mb-4 mt-8">
+              De ce ai nevoie de Evacuator Fulger în Chișinău?
+            </h3>
+            <p className="text-light text-lg leading-relaxed mb-4">
+              Un <strong className="text-primary">evacuator profesionist în Chișinău</strong> face 
+              diferența între o zi stresantă și o problemă rezolvată rapid. Echipa Fulger oferă:
+            </p>
+
+            <ul className="space-y-3 mb-6">
+              <li className="flex items-start space-x-3">
+                <span className="text-primary text-xl mt-1">✓</span>
+                <span className="text-light text-lg">
+                  <strong className="text-white">Tractare auto rapidă în Chișinău</strong> - 
+                  Intervenție în sub 20 minute
+                </span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-primary text-xl mt-1">✓</span>
+                <span className="text-light text-lg">
+                  <strong className="text-white">Asistență rutieră completă</strong> - 
+                  Baterie descărcată, pană, cheie blocată
+                </span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-primary text-xl mt-1">✓</span>
+                <span className="text-light text-lg">
+                  <strong className="text-white">Transport sigur</strong> - 
+                  Platforme hidraulice moderne pentru orice tip de vehicul
+                </span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-primary text-xl mt-1">✓</span>
+                <span className="text-light text-lg">
+                  <strong className="text-white">Prețuri transparente</strong> - 
+                  Fără costuri ascunse, tarife comunicate din start
+                </span>
+              </li>
+            </ul>
+
+            <p className="text-light text-lg leading-relaxed">
+              Apelează <strong className="text-primary">Evacuator Fulger Chișinău</strong> la{' '}
+              <a href="tel:+37360000000" className="text-primary font-bold hover:underline">
+                +373 60 000 000
+              </a>{' '}
+              și primești ajutor imediat, 24 de ore din 24, 7 zile din 7. 
+              Suntem <strong className="text-white">evacuatorul de încredere al Chișinăului</strong>!
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20 bg-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-white mb-4">
-              Serviciile <span className="text-primary">noastre</span>
+              Servicii Evacuator Chișinău - <span className="text-primary">Tractare Profesionistă</span>
             </h2>
             <p className="text-light text-lg max-w-2xl mx-auto">
               Oferim soluții complete pentru orice situație rutieră
@@ -154,7 +265,7 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-white mb-4">
-              De ce <span className="text-primary">Fulger</span>?
+              De ce alegi Evacuator <span className="text-primary">Fulger</span> în Chișinău?
             </h2>
           </div>
 
@@ -164,7 +275,7 @@ const Home = () => {
                 <Clock className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-poppins font-bold text-white mb-2">
-                Intervenție Rapidă
+                Evacuator Rapid în Chișinău - Sub 20 Minute
               </h3>
               <p className="text-light">
                 Ajungem în mai puțin de 20 de minute. Când ai nevoie, suntem deja în drum.
@@ -176,7 +287,7 @@ const Home = () => {
                 <Shield className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-poppins font-bold text-white mb-2">
-                100% Siguranță
+                Siguranță Garantată - Evacuator Profesionist
               </h3>
               <p className="text-light">
                 Echipament profesional și asigurare completă. Mașina ta e în mâini sigure.
@@ -188,7 +299,7 @@ const Home = () => {
                 <Phone className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-poppins font-bold text-white mb-2">
-                Suport Non-Stop
+                Asistență Non-Stop 24/7 Chișinău
               </h3>
               <p className="text-light">
                 Disponibili 24/7, inclusiv weekenduri și sărbători. Un apel și suntem acolo.
@@ -205,10 +316,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-white mb-4">
-              <span className="text-primary">Locația</span> noastră
+              Zone Deservite de Evacuator <span className="text-primary">Fulger</span> în Chișinău
             </h2>
             <p className="text-light text-lg">
-              Deservim Chișinău și întreaga Republică Moldova
+              Evacuator profesionist în Chișinău: Botanica, Centru, Buiucani, Rîșcani, Ciocana și întreaga Republică Moldova
             </p>
           </div>
 

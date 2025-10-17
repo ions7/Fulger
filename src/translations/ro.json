@@ -1,0 +1,194 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "prices": "Prețuri",
+    "about": "Despre",
+    "contact": "Contact",
+    "callNow": "Sună acum"
+  },
+  "hero": {
+    "badge": "Disponibil 24/7 - Răspuns instant",
+    "title": "Evacuator Chișinău",
+    "titleHighlight": "Rapid, Sigur, Non-Stop",
+    "subtitle": "Oriunde te afli, echipa",
+    "subtitleBrand": "Fulger",
+    "subtitleContinue": "intervine imediat.",
+    "description": "Tractare auto, asistență rutieră și transport sigur 24/7 în Chișinău și toată Moldova.",
+    "callButton": "📞 Sună acum - Urgent",
+    "whatsappButton": "💬 WhatsApp",
+    "stats": {
+      "availability": "24/7",
+      "availabilityLabel": "Disponibili",
+      "response": "<20 min",
+      "responseLabel": "Timp răspuns",
+      "experience": "5+ ani",
+      "experienceLabel": "Experiență",
+      "clients": "1000+",
+      "clientsLabel": "Clienți mulțumiți"
+    }
+  },
+  "steps": {
+    "badge": "Proces simplu și rapid",
+    "title": "Problema ta se rezolvă în",
+    "titleHighlight": "3 pași simpli",
+    "subtitle": "Cu",
+    "subtitleBrand": "Evacuator Fulger Chișinău",
+    "subtitleContinue": ", procesul este rapid și fără stres. Trimite-ne locația ta și noi ne ocupăm de restul — tractare profesională, asistență rutieră completă și sosire în",
+    "subtitleTime": "timp record sub 20 minute",
+    "trustBadges": {
+      "instantResponse": "Răspuns instant",
+      "transparentPrice": "Preț transparent",
+      "noHiddenFees": "Fără taxe ascunse"
+    },
+    "step1": {
+      "title": "Ne contactezi rapid",
+      "description": "Sună direct la Evacuator Fulger sau apasă butonul \"📞 Sună acum\". Răspundem imediat - disponibili 24/7, în orice moment ai nevoie.",
+      "time": "< 1 minut"
+    },
+    "step2": {
+      "title": "Trimiți locația ta exact",
+      "description": "Cu un singur click, trimiți automat locația ta pe WhatsApp direct din site - simplu, sigur și precis. Știm exact unde te afli.",
+      "time": "< 30 secunde"
+    },
+    "step3": {
+      "title": "Primești ajutor imediat",
+      "description": "În câteva secunde îți oferim estimarea timpului de sosire și prețul exact. Echipa Fulger pornește imediat spre tine cu evacuatorul.",
+      "time": "< 20 minute"
+    },
+    "totalTime": "Timp total proces:",
+    "totalTimeValue": "sub 2 minute",
+    "ctaTitle": "Gata să primești ajutor rapid? ⚡",
+    "ctaDescription": "Trimite locația ta acum și primești",
+    "ctaEstimate": "estimare instantanee",
+    "ctaArrival": "evacuatorul nostru ajunge în",
+    "ctaTime": "maxim 20 de minute",
+    "callButton": "📞 Sună acum",
+    "whatsappButton": "📍 Trimite locația pe WhatsApp",
+    "seoText": "oferă servicii de tractare auto rapidă, asistență rutieră non-stop și transport sigur în toată Moldova. Proces simplu: apel → locație → intervenție în 20 minute. Disponibili 24/7 pentru urgențe auto.",
+    "faq": "Întrebări frecvente:",
+    "faqTime": "Cât durează până ajunge evacuatorul?",
+    "faqTimeAnswer": "Sub 20 minute în Chișinău.",
+    "faqLocation": "Cum trimit locația?",
+    "faqLocationAnswer": "Un click pe WhatsApp.",
+    "faqWhen": "Când răspundeți?",
+    "faqWhenAnswer": "Imediat, 24/7.",
+    "faqPrice": "Cât costă?",
+    "faqPriceAnswer": "Preț transparent comunicat instant."
+  },
+  "services": {
+    "title": "Serviciile",
+    "titleHighlight": "noastre",
+    "subtitle": "Oferim soluții complete pentru orice situație rutieră",
+    "items": {
+      "towing": {
+        "title": "Tractare Auto",
+        "description": "Transport rapid și sigur al vehiculului tău în orice punct din Moldova."
+      },
+      "roadside": {
+        "title": "Asistență Rutieră",
+        "description": "Echipă profesionistă pentru orice problemă mecanică la fața locului."
+      },
+      "available": {
+        "title": "Disponibili 24/7",
+        "description": "La orice oră din zi sau noapte, suntem la un apel distanță de tine."
+      },
+      "transport": {
+        "title": "Transport Sigur",
+        "description": "Evacuatoare moderne cu platforme hidraulice pentru orice tip de vehicul."
+      }
+    }
+  },
+  "whyUs": {
+    "badge": "De ce să ne alegi?",
+    "title": "Experiența",
+    "titleHighlight": "Fulger",
+    "subtitle": "în domeniul evacuator și tractare auto",
+    "description": "De peste 5 ani oferim servicii de evacuator și tractare auto în Chișinău și toată Moldova. Echipa noastră profesionistă garantează intervenții rapide, transport sigur și prețuri corecte.",
+    "features": {
+      "fast": {
+        "title": "Intervenție Rapidă",
+        "description": "Ajungem la tine în mai puțin de 20 de minute în Chișinău."
+      },
+      "professional": {
+        "title": "Echipă Profesionistă",
+        "description": "Personal calificat și echipament modern pentru orice situație."
+      },
+      "price": {
+        "title": "Preț Corect",
+        "description": "Tarife transparente, fără costuri ascunse sau surprize."
+      },
+      "safe": {
+        "title": "Transport Sigur",
+        "description": "Vehiculul tău este tratat cu grijă maximă pe toată durata transportului."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Clienți mulțumiți",
+    "title": "Ce spun",
+    "titleHighlight": "clienții noștri",
+    "subtitle": "Mii de șoferi mulțumiți recomandă serviciile noastre"
+  },
+  "footer": {
+    "brand": "FULGER",
+    "description": "Evacuator rapid și profesionist în Chișinău. Intervenim 24/7, la orice oră, oriunde în Moldova.",
+    "tagline": "⚡ Rapid ca Fulgerul, la orice oră.",
+    "contact": "Contact",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Adresă",
+    "addressValue": "Chișinău, Moldova",
+    "quickLinks": "Link-uri rapide",
+    "followUs": "Urmărește-ne",
+    "copyright": "© {year} Fulger.md. Toate drepturile rezervate.",
+    "privacy": "Politică de confidențialitate",
+    "terms": "Termeni și condiții"
+  },
+  "contact": {
+    "title": "Contactează-ne",
+    "subtitle": "Suntem aici pentru tine 24/7",
+    "form": {
+      "name": "Nume complet",
+      "phone": "Telefon",
+      "email": "Email (opțional)",
+      "message": "Mesaj",
+      "submit": "Trimite mesaj",
+      "success": "Mesaj trimis cu succes! Te vom contacta în curând.",
+      "error": "A apărut o eroare. Te rugăm să ne suni direct."
+    },
+    "info": {
+      "title": "Informații de contact",
+      "available": "Disponibili 24/7",
+      "response": "Răspuns în 2 minute"
+    }
+  },
+  "prices": {
+    "title": "Prețuri",
+    "titleHighlight": "Transparente",
+    "subtitle": "Tarife clare, fără costuri ascunse",
+    "note": "* Prețurile pot varia în funcție de distanță și complexitatea situației",
+    "callForQuote": "Sună pentru ofertă exactă"
+  },
+  "about": {
+    "title": "Despre",
+    "titleHighlight": "Fulger",
+    "subtitle": "Echipa ta de încredere pentru evacuator și tractare auto",
+    "description": "Suntem o echipă dedicată de profesioniști cu peste 5 ani de experiență în domeniul evacuator și tractare auto. Misiunea noastră este să oferim servicii rapide, sigure și la prețuri corecte pentru toți șoferii din Moldova.",
+    "mission": {
+      "title": "Misiunea noastră",
+      "text": "Să fim primul număr pe care îl suni când ai nevoie de ajutor pe drum."
+    },
+    "values": {
+      "title": "Valorile noastre",
+      "text": "Rapiditate, profesionalism, transparență și respect pentru fiecare client."
+    }
+  },
+  "common": {
+    "readMore": "Citește mai mult",
+    "learnMore": "Află mai multe",
+    "contactUs": "Contactează-ne",
+    "getQuote": "Solicită ofertă",
+    "viewAll": "Vezi toate"
+  }
+}

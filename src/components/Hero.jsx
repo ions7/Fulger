@@ -1,6 +1,9 @@
 import { Phone, MessageCircle } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
 
 const Hero = () => {
+  const { t } = useLanguage()
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Dark Overlay */}
@@ -28,20 +31,20 @@ const Hero = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
           </span>
-          <span className="text-primary text-sm sm:text-base font-semibold">Disponibil 24/7 - Răspuns instant</span>
+          <span className="text-primary text-sm sm:text-base font-semibold">{t('hero.badge')}</span>
         </div>
 
         {/* Main Heading */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-poppins font-bold text-white mb-4 sm:mb-6 leading-tight animate-slide-up px-2">
-          Evacuator Chișinău{' '}
-          <span className="text-primary block sm:inline mt-2 sm:mt-0">Rapid, Sigur, Non-Stop</span>
+          {t('hero.title')}{' '}
+          <span className="text-primary block sm:inline mt-2 sm:mt-0">{t('hero.titleHighlight')}</span>
         </h1>
 
         {/* Subtext */}
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-light max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed animate-slide-up px-4">
-          Oriunde te afli, echipa <span className="text-primary font-semibold">Fulger</span> intervine imediat.
+          {t('hero.subtitle')} <span className="text-primary font-semibold">{t('hero.subtitleBrand')}</span> {t('hero.subtitleContinue')}
           <br className="hidden sm:block" />
-          <span className="block sm:inline mt-2 sm:mt-0">Tractare auto, asistență rutieră și transport sigur 24/7 în Chișinău și toată Moldova.</span>
+          <span className="block sm:inline mt-2 sm:mt-0">{t('hero.description')}</span>
         </p>
 
         {/* CTA Buttons */}
@@ -51,7 +54,7 @@ const Hero = () => {
             className="flex items-center space-x-3 bg-primary text-dark px-8 py-5 rounded-full font-bold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 shadow-xl shadow-primary/40 glow-primary hover:glow-primary-lg w-full sm:w-auto justify-center group"
           >
             <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-            <span>📞 Sună acum - Urgent</span>
+            <span>{t('hero.callButton')}</span>
           </a>
           <a
             href="https://wa.me/37360000000"
@@ -60,7 +63,7 @@ const Hero = () => {
             className="flex items-center space-x-3 bg-[#25D366] text-white px-8 py-5 rounded-full font-bold text-lg hover:bg-[#20BA5A] transition-all duration-300 hover:scale-105 shadow-xl shadow-[#25D366]/30 w-full sm:w-auto justify-center group"
           >
             <MessageCircle className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-            <span>💬 WhatsApp</span>
+            <span>{t('hero.whatsappButton')}</span>
           </a>
         </div>
 
@@ -68,34 +71,34 @@ const Hero = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 max-w-4xl mx-auto">
           <div className="text-center">
             <div className="text-3xl sm:text-4xl font-poppins font-bold text-primary mb-2">
-              24/7
+              {t('hero.stats.availability')}
             </div>
             <div className="text-sm text-light">
-              Disponibili<br />Non-Stop
+              {t('hero.stats.availabilityLabel')}
             </div>
           </div>
           <div className="text-center">
             <div className="text-3xl sm:text-4xl font-poppins font-bold text-primary mb-2">
-              &lt;20 min
+              {t('hero.stats.response')}
             </div>
             <div className="text-sm text-light">
-              Timp de<br />Răspuns
+              {t('hero.stats.responseLabel')}
             </div>
           </div>
           <div className="text-center">
             <div className="text-3xl sm:text-4xl font-poppins font-bold text-primary mb-2">
-              100%
+              {t('hero.stats.experience')}
             </div>
             <div className="text-sm text-light">
-              Profesionalism<br />Garantat
+              {t('hero.stats.experienceLabel')}
             </div>
           </div>
           <div className="text-center">
             <div className="text-3xl sm:text-4xl font-poppins font-bold text-primary mb-2">
-              5000+
+              {t('hero.stats.clients')}
             </div>
             <div className="text-sm text-light">
-              Clienți<br />Mulțumiți
+              {t('hero.stats.clientsLabel')}
             </div>
           </div>
         </div>

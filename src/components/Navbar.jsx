@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Zap, Phone } from 'lucide-react'
+import { Menu, X, Zap, Phone, Globe } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [langMenuOpen, setLangMenuOpen] = useState(false)
   const location = useLocation()
+  const { language, changeLanguage, t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,12 +27,20 @@ const Navbar = () => {
   }, [isOpen])
 
   const navigation = [
-    { name: 'Acasă', href: '/' },
-    { name: 'Servicii', href: '/servicii' },
-    { name: 'Prețuri', href: '/preturi' },
-    { name: 'Despre', href: '/despre' },
-    { name: 'Contact', href: '/contact' },
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.services'), href: '/servicii' },
+    { name: t('nav.prices'), href: '/preturi' },
+    { name: t('nav.about'), href: '/despre' },
+    { name: t('nav.contact'), href: '/contact' },
   ]
+
+  const languages = [
+    { code: 'ro', name: 'Română', flag: '🇷🇴' },
+    { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+    { code: 'en', name: 'English', flag: '🇬🇧' }
+  ]
+
+  const currentLang = languages.find(lang => lang.code === language)
 
   const isActive = (path) => location.pathname === path
 
@@ -51,7 +62,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
             {navigation.map((link) => (
               <Link
                 key={link.href}
@@ -66,13 +77,33 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+            
+            {/* Language Selector - Desktop (Inline Buttons) */}
+            <div className="flex items-center space-x-1 bg-dark/50 border border-primary/20 rounded-full p-1">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => changeLanguage(lang.code)}
+                  className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
+                    language === lang.code
+                      ? 'bg-primary text-dark shadow-lg'
+                      : 'text-white hover:bg-primary/10 hover:text-primary'
+                  }`}
+                  title={lang.name}
+                >
+                  <span className="text-base">{lang.flag}</span>
+                  <span className="hidden lg:inline">{lang.code.toUpperCase()}</span>
+                </button>
+              ))}
+            </div>
+            
             <a
               href="tel:+37360000000"
               className="flex items-center space-x-2 bg-primary text-dark px-5 py-2.5 rounded-full font-semibold hover:bg-primary/90 transition-all duration-200 hover:scale-105 shadow-lg shadow-primary/20"
             >
               <Phone className="w-4 h-4" />
-              <span className="hidden lg:inline">Sună acum</span>
-              <span className="lg:hidden">Sună</span>
+              <span className="hidden lg:inline">{t('nav.callNow')}</span>
+              <span className="lg:hidden">{t('nav.callNow').split(' ')[0]}</span>
             </a>
           </div>
 
@@ -107,13 +138,42 @@ const Navbar = () => {
                 </Link>
               ))}
               
+              {/* Language Selector - Mobile (Improved) */}
+              <div className="pt-6 pb-4">
+                <div className="text-center mb-4">
+                  <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
+                    <Globe className="w-4 h-4 text-primary" />
+                    <span className="text-primary text-sm font-semibold">Choose Language</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 gap-3">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        changeLanguage(lang.code)
+                        setIsOpen(false)
+                      }}
+                      className={`flex flex-col items-center space-y-2 p-4 rounded-2xl text-center font-semibold transition-all duration-200 ${
+                        language === lang.code
+                          ? 'bg-primary text-dark shadow-xl scale-105'
+                          : 'bg-dark/50 text-white hover:bg-primary/10 hover:text-primary border border-primary/20'
+                      }`}
+                    >
+                      <span className="text-4xl">{lang.flag}</span>
+                      <span className="text-xs uppercase tracking-wide">{lang.code}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+              
               {/* Mobile CTA Button */}
               <a
                 href="tel:+37360000000"
-                className="flex items-center justify-center space-x-3 bg-primary text-dark px-6 py-4 rounded-2xl font-bold text-lg mt-8 shadow-lg shadow-primary/30 hover:scale-105 transition-transform"
+                className="flex items-center justify-center space-x-3 bg-primary text-dark px-6 py-4 rounded-2xl font-bold text-lg mt-6 shadow-lg shadow-primary/30 hover:scale-105 transition-transform"
               >
                 <Phone className="w-5 h-5" />
-                <span>📞 Sună acum - Urgent</span>
+                <span>📞 {t('hero.callButton')}</span>
               </a>
 
               {/* WhatsApp Button on Mobile */}
@@ -124,7 +184,7 @@ const Navbar = () => {
                 className="flex items-center justify-center space-x-3 bg-[#25D366] text-white px-6 py-4 rounded-2xl font-bold text-lg shadow-lg hover:bg-[#20BA5A] hover:scale-105 transition-all"
               >
                 <span>💬</span>
-                <span>WhatsApp</span>
+                <span>{t('hero.whatsappButton')}</span>
               </a>
             </div>
           </div>

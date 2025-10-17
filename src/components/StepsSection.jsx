@@ -1,30 +1,30 @@
 import { Phone, MapPin, Zap, Check } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
 
 const StepsSection = () => {
+  const { t } = useLanguage()
+  
   const steps = [
     {
       number: "01",
       icon: Phone,
-      title: "Ne contactezi rapid",
-      description: "Sună direct la Evacuator Fulger sau apasă butonul \"📞 Sună acum\". Răspundem imediat - disponibili 24/7, în orice moment ai nevoie.",
-      keywords: "apel urgent, contact evacuator, telefon non-stop",
-      time: "< 1 minut"
+      title: t('steps.step1.title'),
+      description: t('steps.step1.description'),
+      time: t('steps.step1.time')
     },
     {
       number: "02",
       icon: MapPin,
-      title: "Trimiți locația ta exact",
-      description: "Cu un singur click, trimiți automat locația ta pe WhatsApp direct din site - simplu, sigur și precis. Știm exact unde te afli.",
-      keywords: "locație GPS, WhatsApp instant, poziționare",
-      time: "< 30 secunde"
+      title: t('steps.step2.title'),
+      description: t('steps.step2.description'),
+      time: t('steps.step2.time')
     },
     {
       number: "03",
       icon: Zap,
-      title: "Primești ajutor imediat",
-      description: "În câteva secunde îți oferim estimarea timpului de sosire și prețul exact. Echipa Fulger pornește imediat spre tine cu evacuatorul.",
-      keywords: "intervenție rapidă, preț transparent, evacuator în drum",
-      time: "< 20 minute"
+      title: t('steps.step3.title'),
+      description: t('steps.step3.description'),
+      time: t('steps.step3.time')
     }
   ]
 

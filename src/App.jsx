@@ -7,6 +7,7 @@ import Prices from './pages/Prices'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import CallButton from './components/CallButton'
+import LanguageToggle from './components/LanguageToggle'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       </main>
       <Footer />
       <CallButton />
+      <LanguageToggle />
     </div>
   )
 }

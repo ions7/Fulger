@@ -8,11 +8,13 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import CallButton from './components/CallButton'
 import LanguageToggle from './components/LanguageToggle'
+import BottomNav from "./components/BottomNav.jsx";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+    <BottomNav/>
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +26,6 @@ function App() {
       </main>
       <Footer />
       <CallButton />
-      <LanguageToggle />
     </div>
   )
 }

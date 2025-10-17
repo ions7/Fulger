@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fulger.md/sitemap.xml
+
+# Disallow admin/internal pages (none for now)
+# Disallow: /admin/
